@@ -1,0 +1,127 @@
+body{
+background-image: linear-gradient(135deg, rgb(251, 225, 172),rgb(187, 141, 252));
+}
+.nav{
+    width: 100vw;
+    background-color:rgb(63, 192, 252);
+    display: flex;
+    justify-content: center;
+    padding:10px 0px;
+    margin-bottom: 10vh;
+    color:white;
+    font-size:20px;
+    font-weight:600
+}
+.foot {
+    width: 100vw;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600
+}
+.cont{
+    position: relative;
+        height: 43vw;
+        max-height: 600px;
+        width: 43vw;
+        max-width: 650px;
+        transition-duration: 0.3s;
+}
+.bar{
+    margin-bottom: 5vh;
+    margin-left: 100vw;
+    transform: translateX(-115%);
+}
+.scatter {
+    margin-bottom: 15vh;
+    margin-left: 5vw;
+    }
+
+.scattercont {
+    position: relative;
+    transition-duration: 0.3s;
+}
+.scattertext{
+    position: absolute;
+    top: 5px;
+    width: 47vw;
+    left:100vw;
+    transform: translateX(-105%);
+    transition-duration: 0.3s;
+}
+
+.barcont{
+    position: relative;
+    transition-duration: 0.3s;
+}
+.bartext{
+    position:absolute;
+    top:5px;
+    left:5vw;
+    width:43vw;
+    transition-duration: 0.3s;
+}
+@media screen and (max-width: 1000px ) and (min-width: 550px) {
+    .cont{
+        margin-left: 50vw;
+        transform: translateX(-50%);
+        min-height:480px;
+        min-width: 500px;
+    }
+        .bartext {
+            position:relative;
+            margin-left: 47vw;
+            transform: translateX(-50%);
+            margin-bottom: 10vh;
+            width:60vw;
+        }
+        .scatter{
+            margin-bottom: 4vh;
+        }
+        .scattertext {
+            position: relative;
+            margin-bottom: 8vh;
+            margin-left: -50vw;
+            transform: translateX(-50%);
+            width: 60vw;
+        }
+
+}
+@media screen and (max-width: 550px) {
+    .cont{
+        margin-left: 50vw;
+        transform: translateX(-50%);
+        width: 90vw;
+        height: 95vw;
+    }
+
+         .bartext {
+             position: relative;
+             margin-left: 50vw;
+             transform: translateX(-55%);
+             margin-bottom: 10vh;
+            width: 85vw;
+            font-size: 15px;
+         }
+    
+         .scatter {
+             margin-bottom: 4vh;
+         }
+    
+         .scattertext {
+             position: relative;
+             margin-bottom: 8vh;
+             margin-left: -51vw;
+             transform: translateX(-47%);
+             width: 85vw;
+            font-size: 15px;
+         }
+         .foot{
+             font-weight:300;
+             font-size: 12px;
+         }
+    
+}
